@@ -1,0 +1,17 @@
+.Header{
+    background-color: #EC268F;
+    height: 65px;
+    font-family: 'Supertalls';
+}
+.Header-contents{
+    display: flex;
+    
+}
+.img-logo-Toracon-simple img{
+    width: 51px;
+    height: 51px;
+}
+.img-cart img{
+    width: 25px;
+    height: 25px;
+}
