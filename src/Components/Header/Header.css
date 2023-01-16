@@ -1,17 +1,51 @@
 .Header{
+    width: 100%;
     background-color: #EC268F;
     height: 65px;
     font-family: 'Supertalls';
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .Header-contents{
+    width: 90%;
     display: flex;
-    
+    align-items: center;
+    justify-content: space-between; 
+}
+.img-logo-Toracon-simple{
+    display: flex;
+    align-items: center;
 }
 .img-logo-Toracon-simple img{
     width: 51px;
     height: 51px;
+    filter: drop-shadow(0px 0px 4px rgba(0, 175, 239, 0.5));
+}
+.Header-Nav{
+    display: flex;
+    gap: 10px;
+}
+.Header-Nav h1{
+    font-family: 'Supertalls';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 5px rgba(0, 175, 239, 0.5);
+}
+.img-cart{
+    display: flex;
+    align-items: center;
 }
 .img-cart img{
     width: 25px;
     height: 25px;
+    filter: drop-shadow(0px 0px 4px rgba(0, 175, 239, 0.5));
+}
+.Header-Nav{
+    display: flex;
+
 }

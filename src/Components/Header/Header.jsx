@@ -10,7 +10,7 @@ const Header = () => {
             <div className='img-logo-Toracon-simple'>
                 <img src={LogoToracon} alt="LogoToracon" />
             </div>
-            <div>
+            <div className='Header-Nav'>
                 <div>
                     <h1>
                         home

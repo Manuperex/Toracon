@@ -1,0 +1,53 @@
+.Description{
+    width: 100%;
+    height: auto;
+    background-color: #000;
+    font-family: 'Supertalls';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Description-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 85%;
+    height: 183px;
+    background: #00AFEF;
+    color: white;
+    text-align: center;
+    box-shadow: 0px 0px 15px 5px rgba(236, 38, 143, 0.5);
+    border-radius: 20px;
+}
+.Description-block p{
+    width: 90%;
+    font-size: 11px;
+    line-height: 16px;
+    color: white;
+    text-shadow: 0px 0px 4px rgba(236, 38, 143, 0.5);
+}
+.Description-btn{
+    width: 30%;
+    border: 1px #EC268F solid;
+    height: auto;
+    background: #EC268F;
+    box-shadow: 0px 0px 4px 2px rgba(236, 38, 143, 0.5);
+    border-radius: 20px;
+    
+}
+.Description-btn-a{
+    text-decoration: none;
+    
+}
+.Description-btn h2{
+    font-family: 'Supertalls';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 4px rgba(0, 175, 239, 0.5);
+    padding: 5px;
+}
