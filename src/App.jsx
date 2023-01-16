@@ -4,6 +4,7 @@ import Header from "./Components/Header/Header"
 import Banner from "./Components/Banner/Banner"
 import Description from "./Components/Description/Description"
 import CardsCarousel from './Components/CardsCarousel/CardsCarousel'
+import Products from './Components/Products/Products'
 
 function App() {
     return (
@@ -12,6 +13,7 @@ function App() {
             <Banner/>
             <Description/>
             <CardsCarousel/>
+            <Products/>
 
         </div>
     )

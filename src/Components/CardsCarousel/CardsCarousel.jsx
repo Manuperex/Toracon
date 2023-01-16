@@ -6,6 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 // import required modules
+import { Navigation } from "swiper";
 import { Pagination } from "swiper";
 // import picture from folder assets
 import img1 from '../../assets/CardsCaruosel/img1.jpg'
@@ -21,29 +22,28 @@ import img10 from '../../assets/CardsCaruosel/img11.jpg'
 import img11 from '../../assets/CardsCaruosel/img12.jpg'
 import img12 from '../../assets/CardsCaruosel/img5.jpg'
 const CardsCarousel = () => {
+    const mediaQuery = window.matchMedia('(max-width: 744px)').matches;
     return (
-        <>
-          <Swiper 
+        <div>
+            <Swiper 
             slidesPerView={2}
             spaceBetween={5}
-            pagination={{
-            clickable: true,
-            }}
+            navigation={mediaQuery ? false : true}
             breakpoints={{
                 500: {
                   slidesPerView: 3,
                   spaceBetween: 10,
                 },
-                768: {
+                744: {
                   slidesPerView: 4,
-                  spaceBetween: 40,
+                  spaceBetween: 20,
                 },
                 1024: {
                   slidesPerView: 5,
                   spaceBetween: 50,
                 },
               }}
-            modules={[Pagination]}
+            modules={mediaQuery ? [Pagination] : [Navigation]}
             className="mySwiper">
             <SwiperSlide>
                 <img src={img1} alt="" />
@@ -82,7 +82,8 @@ const CardsCarousel = () => {
                 <img src={img12} alt="" />
                 </SwiperSlide>
           </Swiper>
-        </>
+        </div>
+          
     )
 }
 
