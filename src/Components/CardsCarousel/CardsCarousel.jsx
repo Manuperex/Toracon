@@ -24,7 +24,7 @@ import img12 from '../../assets/CardsCaruosel/img5.jpg'
 const CardsCarousel = () => {
     const mediaQuery = window.matchMedia('(max-width: 744px)').matches;
     return (
-        <div>
+        <div className='CardsCarousel'>
             <Swiper 
             slidesPerView={2}
             spaceBetween={5}

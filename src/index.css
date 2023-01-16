@@ -5,11 +5,22 @@
     font-weight: normal;
     font-style: normal;
 }
-
+*::after,
+*::before,
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
+}
+.icon-cart {
+	width: 40px;
+	height: 40px;
+	stroke: #000;
+}
+
+.icon-cart:hover {
+	cursor: pointer;
 }
 :root {
     --swiper-theme-color: #EC268F;
