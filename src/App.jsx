@@ -57,6 +57,7 @@ function App() {
             setCountProducts={setCountProducts}
             articles={articles}
             />
+            <Footer/>
         </div>
     )
    
