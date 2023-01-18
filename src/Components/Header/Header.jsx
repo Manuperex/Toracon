@@ -29,6 +29,12 @@ const Header = ({
 		setTotal(0);
 		setCountProducts(0);
 	};
+	const sendProducts = () => {
+		let productsForWsp = allProducts.map(producto => `- ${producto.quantity} - ${producto.nameProduct} $${producto.price} c/u`);
+		const productsSpace = productsForWsp.join('\n');
+
+		return window.location.assign('https://api.whatsapp.com/send?phone=+573508994476&text=Me%20interesan%20los%20siguientes%20productos' + ' ' + productsSpace)
+	 };
   return (
     <div className='Header'>
         <div className='Header-contents'>
@@ -103,10 +109,15 @@ const Header = ({
 								<h3>Total:</h3>
 								<span className='total-pagar'>${total}</span>
 							</div>
-
-							<button className='btn-clear-all' onClick={onCleanCart}>
-								Vaciar Carrito
-							</button>
+							<div className='row-product-btn-end'>
+								<button className='btn-clear-all' onClick={onCleanCart}>
+									Vaciar Carrito
+								</button>
+								<button className='btn-clear-all' onClick={sendProducts}>
+									Envias Whatsapp
+								</button>
+							</div>
+							
 						</>
 					) : (
 						<p className='cart-empty'>El carrito está vacío</p>

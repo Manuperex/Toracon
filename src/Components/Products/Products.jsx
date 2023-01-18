@@ -1,6 +1,5 @@
 import React from 'react'
 import './Products.css'
-import { data } from './data';
 
 const Products = ({
   	allProducts,
@@ -8,7 +7,8 @@ const Products = ({
 	countProducts,
 	setCountProducts,
 	total,
-	setTotal
+	setTotal,
+	articles
 }) => {
   const onAddProduct = product => {
 		if (allProducts.find(item => item.id === product.id)) {
@@ -28,7 +28,7 @@ const Products = ({
 	};
   return (
     <div className='container-items'>
-			{data.map(product => (
+			{articles.map(product => (
 				<div className='item' key={product.id}>
 					<figure>
 						<img src={product.img} alt={product.nameProduct} />
