@@ -3,6 +3,7 @@ import CyberSamuraiPass from "../../assets/CardsProducts/cyberSamuraiPass.jpg"
 import Imperial from "../../assets/CardsProducts/entradaImperial.jpg"
 import Ronin from "../../assets/CardsProducts/entradaRonin .jpg"
 import SuperHero from "../../assets/CardsProducts/entradaSuperHero .jpg"
+
 export const data = [
     {
         id: 1,

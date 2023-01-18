@@ -6,6 +6,7 @@ import Banner from "./Components/Banner/Banner"
 import Description from "./Components/Description/Description"
 import CardsCarousel from './Components/CardsCarousel/CardsCarousel'
 import Products from './Components/Products/Products'
+import Footer from './Components/Footer/Footer';
 
 function App() {
     const [allProducts, setAllProducts] = useState([]);
@@ -32,6 +33,7 @@ function App() {
             countProducts={countProducts}
             setCountProducts={setCountProducts}
             />
+            <Footer/>
         </div>
     )
    

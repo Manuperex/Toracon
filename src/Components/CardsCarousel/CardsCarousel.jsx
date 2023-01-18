@@ -21,6 +21,7 @@ import img9 from '../../assets/CardsCaruosel/img10.jpg'
 import img10 from '../../assets/CardsCaruosel/img11.jpg'
 import img11 from '../../assets/CardsCaruosel/img12.jpg'
 import img12 from '../../assets/CardsCaruosel/img5.jpg'
+
 const CardsCarousel = () => {
     const mediaQuery = window.matchMedia('(max-width: 744px)').matches;
     return (

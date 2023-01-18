@@ -1,8 +1,17 @@
 import React from 'react'
+import './Footer.css'
 
 const Footer = () => {
-  return (
-    <div>Footer</div>
+
+  const sendProducts = () => {
+     return window.location.assign("https://api.whatsapp.com/send?phone=+573173072440&text=Hola%20Mundo")
+  };
+
+return (
+  <div className='Footer'>
+    <button className='btn-send' onClick={sendProducts}>
+    </button>
+  </div>
   )
 }
 

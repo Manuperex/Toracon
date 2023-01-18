@@ -46,9 +46,6 @@ const Header = ({
                         contacto
                     </h1>
                 </div>
-                {/* <div className='img-cart'>
-                    <img src={Cart} alt="LogoToracon" />
-                </div> */}
                 <div className='container-icon'>
 				<div
 					className='container-cart-icon'

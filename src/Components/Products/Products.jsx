@@ -37,9 +37,9 @@ const Products = ({
 						<h2>{product.nameProduct}</h2>
 						<p className='price'>${product.price}</p>
 						<button onClick={() => onAddProduct(product)}>
-              <h2>
-                Añadir al carrito
-              </h2>
+              			<h2>
+                			Añadir al carrito
+              			</h2>
 						</button>
 					</div>
 				</div>
