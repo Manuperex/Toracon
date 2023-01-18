@@ -1,0 +1,43 @@
+.categories-title{
+    font-family: 'Supertalls';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 4px rgba(0, 175, 239, 0.5);
+    padding: 15px 20px;
+    background: #EC268F;
+    box-shadow: 0px 0px 4px 2px rgba(236, 38, 143, 0.5);
+    border-radius: 60px;
+    margin: 30px 10px 30px 10px;
+}
+
+.categories{
+    width: 100%;
+    display:flex;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 0px 10px;
+}
+.btn-category{
+    width: auto;
+    border: 1px #EC268F solid;
+    height: auto;
+    background: #EC268F;
+    box-shadow: 0px 0px 4px 2px rgba(236, 38, 143, 0.5);
+    border-radius: 20px;
+}
+.btn-category h2{
+    
+    font-family: 'Supertalls';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 4px rgba(0, 175, 239, 0.5);
+    padding: 5px 15px;
+}
