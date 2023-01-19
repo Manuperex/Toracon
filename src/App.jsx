@@ -7,6 +7,7 @@ import Description from "./Components/Description/Description"
 import CardsCarousel from './Components/CardsCarousel/CardsCarousel'
 import Products from './Components/Products/Products'
 import ButtonList from './Components/ButtonList/ButtonList'
+import Footer from './Components/Footer/Footer'
 import {data} from './Data/data';
 
 
