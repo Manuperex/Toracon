@@ -1,13 +1,11 @@
 import "./App.css";
 import React from "react";
 import { useState, useEffect } from "react";
+import {BrowserRouter, Route, Routes, } from "react-router-dom"
+import Home from './Page/Home/Home'
 import Header from "./Components/Header/Header";
-import Banner from "./Components/Banner/Banner";
-import Description from "./Components/Description/Description";
-import CardsCarousel from "./Components/CardsCarousel/CardsCarousel";
-import Products from "./Components/Products/Products";
-import ButtonList from "./Components/ButtonList/ButtonList";
-import Footer from "./Components/Footer/Footer";
+import NotFound from "./Page/NotFound/NotFound"
+import Contact from "./Page/Contact/Contact"
 import { data } from "./Data/data";
 
 function App() {
@@ -53,10 +51,9 @@ function App() {
     localStorage.setItem("total", JSON.stringify(total));
     localStorage.setItem("countProducts", JSON.stringify(countProducts));
   }, [allProducts]);
-
   return (
-    <div>
-      <Header
+    <BrowserRouter>
+    <Header
         allProducts={allProducts}
         setAllProducts={setAllProducts}
         total={total}
@@ -64,21 +61,25 @@ function App() {
         countProducts={countProducts}
         setCountProducts={setCountProducts}
       />
-      <Banner />
-      <Description />
-      <CardsCarousel />
-      <ButtonList categories={categories} filterCategory={filterCategory} />
-      <Products
-        allProducts={allProducts}
-        setAllProducts={setAllProducts}
-        total={total}
-        setTotal={setTotal}
-        countProducts={countProducts}
-        setCountProducts={setCountProducts}
-        articles={articles}
-      />
-      <Footer />
-    </div>
+    <Routes>
+      <Route path="/" element={<Home
+      categories={categories} 
+      filterCategory={filterCategory}
+      allProducts={allProducts}
+      setAllProducts={setAllProducts}
+      total={total}
+      setTotal={setTotal}
+      countProducts={countProducts}
+      setCountProducts={setCountProducts}
+      articles={articles}/>}/>
+
+      <Route path="/Contact" element={<Contact/>}/>
+
+      <Route path="*" element={<NotFound/>}/>
+      
+    </Routes>
+      
+    </BrowserRouter>
   );
 }
 

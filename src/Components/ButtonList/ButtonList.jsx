@@ -3,7 +3,7 @@ import "./ButtonList.css"
 
 const ButtonList = ({ categories, filterCategory }) => {
     return (
-		<div>
+		<div className='ButtonList'>
 			<div className='categories-title'>
 				<h1>
 					Entradas

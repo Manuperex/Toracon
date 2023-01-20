@@ -2,7 +2,8 @@ import "./Header.css";
 import React from "react";
 import LogoToracon from "../../assets/Header/logoToracon.png";
 import Cart from "../../assets/Header/carts.png";
-import { useState, useEffect } from "react";
+import { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 const Header = ({
   allProducts,
@@ -48,12 +49,12 @@ const Header = ({
           <img src={LogoToracon} alt="LogoToracon" />
         </div>
         <div className="Header-Nav">
-          <div>
+          <NavLink to="/">
             <h1>home</h1>
-          </div>
-          <div>
+          </NavLink>
+          <NavLink to="/Contact">
             <h1>contacto</h1>
-          </div>
+          </NavLink>
           <div className="container-icon">
             <div
               className="container-cart-icon"
