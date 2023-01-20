@@ -1,67 +1,85 @@
-import './App.css'
-import React from 'react'
-import { useState } from 'react';
-import Header from "./Components/Header/Header"
-import Banner from "./Components/Banner/Banner"
-import Description from "./Components/Description/Description"
-import CardsCarousel from './Components/CardsCarousel/CardsCarousel'
-import Products from './Components/Products/Products'
-import ButtonList from './Components/ButtonList/ButtonList'
-import Footer from './Components/Footer/Footer'
-import {data} from './Data/data';
-
+import "./App.css";
+import React from "react";
+import { useState, useEffect } from "react";
+import Header from "./Components/Header/Header";
+import Banner from "./Components/Banner/Banner";
+import Description from "./Components/Description/Description";
+import CardsCarousel from "./Components/CardsCarousel/CardsCarousel";
+import Products from "./Components/Products/Products";
+import ButtonList from "./Components/ButtonList/ButtonList";
+import Footer from "./Components/Footer/Footer";
+import { data } from "./Data/data";
 
 function App() {
-    const [allProducts, setAllProducts] = useState([]);
-	const [total, setTotal] = useState(0);
-	const [countProducts, setCountProducts] = useState(0);
+  const [allProducts, setAllProducts] = useState([]);
+  const [total, setTotal] = useState(0);
+  const [countProducts, setCountProducts] = useState(0);
 
-    const allCategories = [
-		'All',...new Set(data.map(article => article.category)),
-	];
+  const allCategories = [
+    "All",
+    ...new Set(data.map((article) => article.category)),
+  ];
 
-	const [categories, setCategories] = useState(allCategories);
-	const [articles, setArticles] = useState(data);
+  const [categories, setCategories] = useState(allCategories);
+  const [articles, setArticles] = useState(data);
 
-	const filterCategory = (category) => {
-		if (category === 'All'){
-			setArticles(data)
-			return
-		}
+  const filterCategory = (category) => {
+    if (category === "All") {
+      setArticles(data);
+      return;
+    }
 
-		const filteredData = data.filter(article => article.category === category);
-		setArticles(filteredData)
-	}
+    const filteredData = data.filter(
+      (article) => article.category === category
+    );
+    setArticles(filteredData);
+  };
+  useEffect(() => {
+    const cartLS = JSON.parse(localStorage.getItem("carrito")) ?? [];
+    const totalLS = JSON.parse(localStorage.getItem("total")) ?? 0;
+    const countProductsLS = JSON.parse(localStorage.getItem("countProducts")) ?? 0;
+    setAllProducts(cartLS);
+    setTotal(totalLS < 0 ? 0 : totalLS)
+    setCountProducts(countProductsLS < 0 ? 0 : countProductsLS)
+    console.log('totalLS', totalLS)
+    console.log('countProductsLS', countProductsLS)
+    console.log("cartLS", cartLS);
+  }, []);
 
-    return (
-         <div>
-            <Header
-            allProducts={allProducts}
-            setAllProducts={setAllProducts}
-            total={total}
-            setTotal={setTotal}
-            countProducts={countProducts}
-            setCountProducts={setCountProducts}
-            />
-            <Banner/>
-            <Description/>
-            <CardsCarousel/>
-            <ButtonList 
-            categories={categories} 
-            filterCategory={filterCategory}/>
-            <Products
-            allProducts={allProducts}
-            setAllProducts={setAllProducts}
-            total={total}
-            setTotal={setTotal}
-            countProducts={countProducts}
-            setCountProducts={setCountProducts}
-            articles={articles}
-            />
-            <Footer/>
-        </div>
-    )
-   
+  console.log("allProducts", allProducts);
+
+  useEffect(() => {
+    localStorage.setItem("carrito", JSON.stringify(allProducts));
+    localStorage.setItem("total", JSON.stringify(total));
+    localStorage.setItem("countProducts", JSON.stringify(countProducts));
+  }, [allProducts]);
+
+  return (
+    <div>
+      <Header
+        allProducts={allProducts}
+        setAllProducts={setAllProducts}
+        total={total}
+        setTotal={setTotal}
+        countProducts={countProducts}
+        setCountProducts={setCountProducts}
+      />
+      <Banner />
+      <Description />
+      <CardsCarousel />
+      <ButtonList categories={categories} filterCategory={filterCategory} />
+      <Products
+        allProducts={allProducts}
+        setAllProducts={setAllProducts}
+        total={total}
+        setTotal={setTotal}
+        countProducts={countProducts}
+        setCountProducts={setCountProducts}
+        articles={articles}
+      />
+      <Footer />
+    </div>
+  );
 }
 
-export default App
+export default App;
