@@ -1,0 +1,68 @@
+.Contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    font-family: 'Supertalls';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #EC268F;
+    text-shadow: 0px 0px 5px rgba(0, 175, 239, 0.5);
+    
+    
+}
+.Contact-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    gap: 25px;
+    margin-top: 50px;
+}
+.Contact-Logo-title img{
+    width: 100%;
+}
+.Contact-contact{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 25px;
+}
+.Networks-Page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+}
+.Networks-Contact-img{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.Networks-Contact-img img{
+    width: 50%;
+}
+.Developer-Page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+}
+.Developer-Network-img{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.Developer-Network-img img{
+    width: 50%;
+}
