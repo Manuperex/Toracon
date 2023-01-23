@@ -39,9 +39,6 @@ function App() {
     setAllProducts(cartLS);
     setTotal(totalLS < 0 ? 0 : totalLS)
     setCountProducts(countProductsLS < 0 ? 0 : countProductsLS)
-    console.log('totalLS', totalLS)
-    console.log('countProductsLS', countProductsLS)
-    console.log("cartLS", cartLS);
   }, []);
 
   console.log("allProducts", allProducts);

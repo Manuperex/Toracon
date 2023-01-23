@@ -15,51 +15,8 @@ const Home = ({categories,
   countProducts,
   setCountProducts,
   articles}) => {
-  // const [allProducts, setAllProducts] = useState([]);
-  // const [total, setTotal] = useState(0);
-  // const [countProducts, setCountProducts] = useState(0);
-
-  // const allCategories = [
-  //   "All",
-  //   ...new Set(data.map((article) => article.category)),
-  // ];
-
-  // const [categories, setCategories] = useState(allCategories);
-  // const [articles, setArticles] = useState(data);
-
-  // const filterCategory = (category) => {
-  //   if (category === "All") {
-  //     setArticles(data);
-  //     return;
-  //   }
-
-  //   const filteredData = data.filter(
-  //     (article) => article.category === category
-  //   );
-  //   setArticles(filteredData);
-  // };
-  // useEffect(() => {
-  //   const cartLS = JSON.parse(localStorage.getItem("carrito")) ?? [];
-  //   const totalLS = JSON.parse(localStorage.getItem("total")) ?? 0;
-  //   const countProductsLS = JSON.parse(localStorage.getItem("countProducts")) ?? 0;
-  //   setAllProducts(cartLS);
-  //   setTotal(totalLS < 0 ? 0 : totalLS)
-  //   setCountProducts(countProductsLS < 0 ? 0 : countProductsLS)
-  //   console.log('totalLS', totalLS)
-  //   console.log('countProductsLS', countProductsLS)
-  //   console.log("cartLS", cartLS);
-  // }, []);
-
-  // console.log("allProducts", allProducts);
-
-  // useEffect(() => {
-  //   localStorage.setItem("carrito", JSON.stringify(allProducts));
-  //   localStorage.setItem("total", JSON.stringify(total));
-  //   localStorage.setItem("countProducts", JSON.stringify(countProducts));
-  // }, [allProducts]);
-
   return (
-    <div>
+    <div className='Overscroll'>
         
       <Banner />
       <Description />

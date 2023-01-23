@@ -3,12 +3,13 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: auto;
+    height: 100vh;
     font-family: 'Supertalls';
     font-style: normal;
     font-weight: 400;
     font-size: 25px;
     line-height: 30px;
+    letter-spacing: 0.05em;
     text-align: center;
     color: #FFFFFF;
     background-color: #EC268F;
@@ -23,7 +24,6 @@
     justify-content: center;
     width: 90%;
     gap: 25px;
-    margin-top: 50px;
 }
 .Contact-Logo-title img{
     width: 100%;

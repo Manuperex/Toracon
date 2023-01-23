@@ -76,7 +76,7 @@ const Header = ({
               {allProducts?.length ? (
                 <>
                   <div className="row-product">
-                    {allProducts?.map((product) => (
+                    {allProducts.map((product) => (
                       <div className="cart-product" key={product.id}>
                         <div className="info-cart-product">
                           <span className="cantidad-producto-carrito">

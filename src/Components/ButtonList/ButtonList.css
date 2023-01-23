@@ -4,6 +4,7 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
+    letter-spacing: 0.05em;
     color: #FFFFFF;
     text-shadow: 0px 0px 4px rgba(0, 175, 239, 0.5);
     padding: 15px 20px;
@@ -42,4 +43,16 @@
     color: #FFFFFF;
     text-shadow: 0px 0px 4px rgba(0, 175, 239, 0.5);
     padding: 5px 15px;
+}
+@media (min-width: 744px){
+    .btn-category h2{
+        font-size: 18px;
+    }
+
+}
+@media (min-width: 1280px){ 
+    .btn-category h2{
+        font-size: 25px;
+        padding: 10px 25px;
+    }
 }

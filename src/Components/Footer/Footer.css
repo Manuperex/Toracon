@@ -9,6 +9,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 30px;
+    letter-spacing: 0.05em;
     text-align: center;
     color: #FFFFFF;
     background-color: #EC268F;
@@ -67,4 +68,42 @@
 }
 .Contact-Developer-img img{
     width: 40%;
+}
+@media (min-width: 744px){
+	.Footer-Logo img{
+        width: 60%;
+        height: 60%;
+    }
+    .Footer{
+        font-size: 22px;
+    }
+    .Contact-Developer{
+        
+        gap: 10px;
+        
+    }
+    .Contact-networks{
+        
+        gap: 10px;
+        
+    }
+}
+@media (min-width: 1280px){
+	.Footer-Logo img{
+        width: 50%;
+        height: 50%;
+    }
+    .Footer{
+        font-size: 22px;
+    }
+    .Contact-Developer{
+        
+        gap: 20px;
+        
+    }
+    .Contact-networks{
+        
+        gap: 20px;
+        
+    }
 }

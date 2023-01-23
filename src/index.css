@@ -25,3 +25,7 @@
 :root {
     --swiper-theme-color: #EC268F;
 }
+.Overscroll{
+    height: 100vh;
+    overflow-y: scroll;
+}
