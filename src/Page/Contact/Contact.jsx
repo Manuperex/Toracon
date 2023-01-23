@@ -23,13 +23,15 @@ const Contact = () => {
             </div>
             <div className="Networks-Contact-img">
               <div>
-                <img src={Whatsapp} alt="" />
+                <a href="https://api.whatsapp.com/send?phone=+573508994476&text=Estoy%20Interesado"><img src={Whatsapp} alt="" /></a>
               </div>
               <div>
-                <img src={Facebook} alt="" />
+                <a href="https://www.facebook.com/profile.php?id=100083286635168&mibextid=ZbWKwL"><img src={Facebook} alt="" /></a>
+                
               </div>
               <div>
-                <img src={Instagram} alt="" />
+                <a href="https://instagram.com/toraconbqto?igshid=ZDdkNTZiNTM="><img src={Instagram} alt="" /></a>
+                
               </div>
             </div>
             
@@ -42,10 +44,12 @@ const Contact = () => {
             </div>
             <div className="Developer-Network-img">
               <div>
-                <img src={GitHub} alt="" />
+                <a href="https://github.com/Manuperex"><img src={GitHub} alt="" /></a>
+                
               </div>
               <div>
-                <img src={Linkedin} alt="" />
+                <a href="https://www.linkedin.com/in/manuel-perez-b3941a107/"><img src={Linkedin} alt="" /></a>
+                
               </div>
             </div>
             
