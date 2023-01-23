@@ -117,7 +117,7 @@ const Header = ({
                       Vaciar Carrito
                     </button>
                     <button className="btn-clear-all" onClick={sendProducts}>
-                      Envias Whatsapp
+                      Enviar Whatsapp
                     </button>
                   </div>
                 </>
