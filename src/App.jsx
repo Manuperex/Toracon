@@ -41,7 +41,6 @@ function App() {
     setCountProducts(countProductsLS < 0 ? 0 : countProductsLS)
   }, []);
 
-  console.log("allProducts", allProducts);
 
   useEffect(() => {
     localStorage.setItem("carrito", JSON.stringify(allProducts));
