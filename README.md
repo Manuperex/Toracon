@@ -21,3 +21,4 @@
 ![carrito](https://user-images.githubusercontent.com/104181677/214187544-31a31ce6-db2c-422e-8e11-563ce567ba2d.png)
 
 <p> En esta parte se muestra el carrito de compras con los productos selecionados con el boton "añadir carrito" </p>
+<p> Y al darle enviar Whatsapp nos direciona a esa app donde hablaremos con la persona de la convencion para finalizar la compra </p>
