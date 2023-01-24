@@ -13,4 +13,11 @@
 
 <p> El proyecto tiene 3 funcionalidades principales Filtras categorias, carrito de compras y enviar informacion al WhatsApp </p>
 
+
 ![Filtro](https://user-images.githubusercontent.com/104181677/214186843-7f82fb79-56a8-4b3b-98ca-d069afb7b778.png)
+
+<p> En esta parte se muestra el filtro por categoria, te daria una entrada difrente dependiend del bton que escojas </p>
+
+![carrito](https://user-images.githubusercontent.com/104181677/214187544-31a31ce6-db2c-422e-8e11-563ce567ba2d.png)
+
+<p> En esta parte se muestra el carrito de compras con los productos selecionados con el boton "añadir carrito" </p>
