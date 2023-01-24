@@ -26,3 +26,10 @@
 <h2 align="center">Acceso al proyecto</h2>
 
 https://shiny-sunflower-1c71a0.netlify.app/
+
+<h2 align="center">Tecnologías utilizadas</h2>
+<img src="https://user-images.githubusercontent.com/104181677/214190069-4270ea5b-f28f-4add-8d8e-73566675e9a4.png" alt="Html-CSS_JAvascript" width="500" height="250"/>
+<img src="https://user-images.githubusercontent.com/104181677/214190688-70bf71eb-8a0f-486a-b61c-d2b63c334fc5.png" alt="Html-CSS_JAvascript" width="250" height="250"/>
+<img src="https://user-images.githubusercontent.com/104181677/214190671-56b90de6-9bbc-49e8-bbf3-f962c2d9c3ce.png" alt="Html-CSS_JAvascript" width="250" height="250"/>
+
+
