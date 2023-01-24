@@ -22,3 +22,7 @@
 
 <p> En esta parte se muestra el carrito de compras con los productos selecionados con el boton "añadir carrito" </p>
 <p> Y al darle enviar Whatsapp nos direciona a esa app donde hablaremos con la persona de la convencion para finalizar la compra </p>
+
+<h2 align="center">Acceso al proyecto</h2>
+
+https://shiny-sunflower-1c71a0.netlify.app/
